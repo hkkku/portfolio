@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!--  Awesome Font link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- reset css link -->
+    <link rel="stylesheet" href="/hkkku/css/reset.css" />
+    <!-- main css link -->
+    <link rel="stylesheet" href="/hkkku/css/style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="sideNav">
+        <a class="sideMenu" type="button" onclick="openNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div class="sideNav_2">
+        <ul class="category">
+          <li><a href="#">Main</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- jquery min framework -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/hkkku/js/custom.js"></script>
+    <script>
+      function openNav() {
+        document.getElementsByClassName("sideNav_2")[0].style.width = "300px";
+        document.getElementsByClassName("category")[0].style.display = "block";
+      }
+
+      function closeNav() {
+        document.getElementsByClassName("sideNav_2")[0].style.width = "0";
+        document.getElementsByClassName("category")[0].style.display = "none";
+      }
+    </script>
+  </body>
+</html>

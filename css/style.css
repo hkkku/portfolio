@@ -1,0 +1,7 @@
+.wrap{width: 100%; height: auto; min-height: 100vh; background: #eae6df;}
+.wrap .sideNav{position: fixed; width: 70px; height: 100vh; background: #424266; z-index: 1;}
+.wrap .sideNav .sideMenu{position: absolute; color: #eae6df; font-size: 30px; top: 50%; left: 50%; transform: translate(-50%, -50%); transition: all 0.3s ease-in;}
+.wrap .sideNav_2{position: fixed; left: 70px; width: 0px; height: 100vh; background: #424266; transition: all 0.6s ease-in-out;}
+.wrap .sideNav_2 .category{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;}
+.wrap .sideNav_2 .category li{text-align: center; padding: 5px 10px;}
+.wrap .sideNav_2 .category li a{color: #eae6df;}

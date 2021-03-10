@@ -1,3 +1,4 @@
+html {scroll-behavior: smooth;}
 .wrap{width: 100%; height: auto; min-height: 100vh; background: #eae6df;}
 .wrap .sideNav{position: fixed; width: 70px; height: 100vh; background: #424266; z-index: 1;}
 .wrap .sideNav .sideMenu{position: absolute; color: #eae6df; font-size: 30px; top: 50%; left: 50%; transform: translate(-50%, -50%); transition: all 0.3s ease-in;}
@@ -5,3 +6,43 @@
 .wrap .sideNav_2 .category{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;}
 .wrap .sideNav_2 .category li{text-align: center; padding: 5px 10px;}
 .wrap .sideNav_2 .category li a{color: #eae6df;}
+.wrap .sideNav_2 .logoBox{width: 100%; position: absolute; left: 5px; top: 35%; color: #eae6df; font-size: 30px; text-align: center; display: none; transition: all 0.4s ease;}
+
+/* profile section */
+.wrap .profile{width: 100%; height: 100vh; display: flex; align-items: center;  padding-right: 10px;}
+.wrap .profile .title{width: 100%; padding-right: 10px;  justify-content: flex-end;}
+.wrap .profile h2{width: 100%; text-align: right; font-size: 150px; font-family: 'Cinzel'; font-weight: 500; line-height: 0.8em; font-style: italic; letter-spacing: -5px; }
+.wrap .profile .blank{width: 70%; display: flex; justify-content: flex-end;}
+.wrap .profile .blank .dropping-texts{width: 100px; font-weight: bold; display: inline-block; font-size: 22px;}
+.wrap .profile .blank .dropping-texts > span{position: absolute; font-size:0px; opacity: 0; transition: all 0.4s;}
+
+.dropping-texts > span:nth-child(1) {
+  animation: roll 5.5s ease-in infinite 0s;
+}
+.dropping-texts > span:nth-child(2) {
+  animation: roll 5.5s ease-in infinite 1.5s;
+}
+
+@keyframes roll {
+  0% {font-size:0px; opacity:0; margin-left:-30px; margin-top:0px;
+ transform: rotate(-25deg);}
+  3% {opacity:1; transform: rotate(0deg);}
+  5% {font-size:inherit; opacity:1; margin-left:0px; margin-top:0px;}
+  20% {font-size:inherit; opacity:1; margin-left:0px; margin-top:0px;transform: rotate(0deg);}
+  27% {font-size:0px; opacity:0.5; margin-left:20px;margin-top:100px;}
+  100% {font-size:0px; opacity:0; margin-left:-30px; margin-top:0px;transform: rotate(15deg);}
+}
+
+@keyframes roll2 {
+  0% {font-size:0px; opacity:0; margin-left:-30px; margin-top:0px;transform: rotate(-25deg);}
+  3% {opacity:1; transform: rotate(0deg);}
+  5% {font-size:inherit; opacity:1; margin-left:0px; margin-top:0px;}
+  30% {font-size:inherit; opacity:1; margin-left:0px; margin-top:0px;transform: rotate(0deg);}
+  37% {font-size:500px; opacity:0; margin-left:-1000px; margin-top:-400px;}
+  100% {font-size:0px; opacity:0; margin-left:-30px; margin-top:0px;transform: rotate(15deg);}
+}
+
+/* skill section */
+.wrap .skill{width: 100%; height: 100vh; background: #eae6df; display: grid; grid-template-columns: repeat(3, minmax(200px, auto)); grid-template-rows: repeat(2, minmax(100px, auto)); gap: 10px;}
+.wrap .skill .item{background: #ddd;}
+.wrap .skill .item:nth-child(5){grid-column-start: 2; grid-column-end: 4;}

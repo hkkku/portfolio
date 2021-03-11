@@ -11,4 +11,17 @@ $(function(){
   })
 
   
+  // function progressing(){
+
+  //   var bar = $(".bar")
+  
+  //   for(i=0; i< bar.length; i++){
+  //     var progress = $(".bar").eq(i).find(".progress").attr("value");
+  //     console.log(progress);
+  //     $(".bar").find(".progress").eq(i).animate({width: progress + "%" }, 3000);
+  //   }
+  // }
+
+  // progressing()
+ 
 });

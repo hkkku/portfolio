@@ -10,10 +10,16 @@ html {scroll-behavior: smooth;}
 
 /* profile section */
 .wrap .profile{width: 100%; height: 100vh; display: flex; align-items: center;  padding-right: 10px;}
-.wrap .profile .title{width: 100%; padding-right: 50px;  justify-content: flex-end;}
-.wrap .profile h2{width: 100%; text-align: right; font-size: 250px; font-family: 'Cinzel'; font-weight: 400; line-height: 0.8em; font-style: italic; letter-spacing: -20px; }
+.wrap .profile .title{width: 100%; padding-right: 80px;  justify-content: flex-end;}
+.wrap .profile h2{width: 100%; text-align: right; font-size: 250px; font-family: 'Bodoni Moda'; font-weight: 400; line-height: 0.8em; font-style: italic; letter-spacing: -20px; z-index: 2; opacity: 0; transition: all 2.3s ease;}
+.wrap .profile h2:after {content: attr(data-shadow); position: absolute; left: 0.8em; z-index: 1; text-shadow: none; background-image: linear-gradient(45deg, transparent 45%, #424266 45%, #424266 55%, transparent 0); background-size: .05em .05em;-webkit-background-clip: text; -webkit-text-fill-color: transparent;animation: shad-anim 15s linear infinite;}
+@keyframes shad-anim {
+  0% {background-position: 0 0}
+  0% {background-position: 100% -100%}
+  }
+
 .wrap .profile .blank{width: 70%; display: flex; justify-content: flex-end;}
-.wrap .profile .blank .dropping-texts{width: 100px; font-weight: bold; display: inline-block; font-size: 22px;}
+.wrap .profile .blank .dropping-texts{width: 200px; font-weight: bold; display: inline-block; font-size: 22px;}
 .wrap .profile .blank .dropping-texts > span{position: absolute; font-size:0px; opacity: 0; transition: all 0.4s;}
 
 .dropping-texts > span:nth-child(1) {
@@ -43,24 +49,44 @@ html {scroll-behavior: smooth;}
 }
 
 /* skill section */
-.wrap .skill{width: 100%; height: 100vh; background: #eae6df; display: grid; grid-template-columns: 1.3fr 1fr 1fr; grid-template-rows: 1fr 1.5fr; gap: 20px 50px;}
-.wrap .skill .item{_background: #ddd; position: relative; padding: 200px 30px 30px;}
+.wrap .skill{width: 100%; height: 100vh; background: #eae6df; display: grid; grid-template-columns: 1.3fr 1fr 1fr; grid-template-rows: 1fr 1.2fr; gap: 20px 50px;}
+.wrap .skill .item{_background: #ddd; position: relative; padding: 200px 20px 20px;}
+.wrap .skill .item:nth-child(4),
+.wrap .skill .item:nth-child(5){padding-top: 0;}
 .wrap .skill .item:nth-child(5){grid-column-start: 2; grid-column-end: 4;}
 
+.wrap .skill .item.photo .photoBox{position: absolute; right: 20px; bottom: 0; width: 200px; height: 250px; background: #ddd;}
 .wrap .skill .item.myProfile{display: flex; text-align: right; flex-direction: column;}
 .item.myProfile h2{width: 100%;}
 .item.myProfile p{width: 100%;}
-.wrap .skill .item.award{}
+.item.myProfile .nameBox{margin-bottom: 20px; font-size: 16px;}
+.item.myProfile .sloganBox{margin-bottom: 20px;}
+/* .wrap .skill .item.award{} */
 
+.wrap .skill .item h2{width: 100%; font-size: 30px; margin-bottom: 35px; font-family: 'Baskervville';}
 .wrap .skill .item.skillBar{width: 100%; display: flex;  flex-direction: column; flex-wrap: wrap; align-items: flex-start;}
-.wrap .skill .item.skillBar h2{width: 100%; font-size: 30px; margin-bottom: 30px;} 
+
 .wrap .skill .item.skillBar .skillBox{width: 100%; display: flex;}
 .wrap .skill .item.skillBar .pSkill,
 .wrap .skill .item.skillBar .dSkill{width: 50%; display: flex; flex-wrap: wrap; flex-direction: column;}
 .wrap .skill .item.skillBar .pSkill.bar{width: 100%;}
 .wrap .skill .item.skillBar .pSkill h2,
-.wrap .skill .item.skillBar .dSkill h2{margin-bottom: 30px; font-size: 16px;}
+.wrap .skill .item.skillBar .dSkill h2{margin-bottom: 30px; font-size: 22px;}
+.wrap .skill .item.skillBar .pSkill h3,
+.wrap .skill .item.skillBar .dSkill h3{margin-bottom: 5px; font-size: 13px;}
 
 .bar{padding: 10px 0;}
-.bar .barBorder{width: 450px; height: 10px; background: #eae6df; border-radius: 30px; border: 1px solid #424266; position: relative;} 
-.bar .progress{position: absolute; width: 0; height: 10px; top: 0; left: 0; background: #424266; border-radius: 30px;}
+.bar .barBorder{width: 80%; height: 10px; background: #eae6df; border-radius: 30px; border: 1px solid #424266; position: relative;} 
+.bar .progress{position: absolute; width: 0; height: 9px; top: 0; left: 0; background: #424266; border-radius: 30px;}
+
+/* portfolio section */
+.portfolio{display: flex; flex-wrap: wrap;}
+.portfolio .titBox{width: 30%; display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end;}
+.portfolio .titBox .txtBox{width: 60%;}
+.portfolio .titBox h2{width: 100%; text-align: right; font-family: 'Baskervville'; font-size: 50px; margin-bottom: 30px;}
+.portfolio .titBox p{width: 100%; text-align: right;}
+.portfolio .potBox{width: 70%; height: auto; display: flex; justify-content: center; flex-wrap: wrap; padding: 30px; align-items: center;}
+.portfolio .potBox .potFrame{width: 100%; height: auto;}
+.portfolio .potBox .btnBox{width: 100%; display: flex; justify-content: center;}
+.portfolio .potBox .potSlider{width: 100%; display: flex; justify-content: center;} 
+.portfolio .potBox .pot{width: 25%; height: 300px; background: #424266; margin: 10px;}

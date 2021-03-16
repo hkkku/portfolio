@@ -29,8 +29,12 @@
   .item.myProfile .sloganBox{padding: 0;}
 
   .portfolio .titBox{width: 100%; justify-content: center; padding-top: 70px;}
-  .portfolio .potBox{width: 100%; padding: 0 70px;}
-  .portfolio .btnBox{justify-content: center;}
+  .portfolio .potBox{width: 100%; padding: 0 70px; align-items: flex-start;}
+  .portfolio .btnBox{justify-content: center; padding-bottom: 30px;}
   .portfolio .titBox h2{text-align: center;}
   .portfolio .titBox p{text-align: center;}
+}
+
+@media screen and (max-width:900px){
+  .portfolio .potBox{width: 80%;}
 }

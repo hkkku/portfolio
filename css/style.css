@@ -1,12 +1,15 @@
 html {scroll-behavior: smooth;}
 .wrap{width: 100%; height: auto; min-height: 100vh; background: #eae6df;}
+/* .cursor{width: 20px; height: 20px; border: 2px solid #424266; border-radius: 20px; position: absolute; z-index: 1000; transform: translate(-50%, -50%);} */
 .sideNav{position: fixed; width: 70px; height: 100vh; background: #424266; z-index: 1;}
 .sideNav .sideMenu{position: absolute; color: #eae6df; font-size: 30px; top: 50%; left: 50%; transform: translate(-50%, -50%); transition: all 0.3s ease-in;}
 .sideNav_2{position: fixed; left: 70px; width: 0px; height: 100vh; background: #424266; transition: all 0.6s ease-in-out; z-index: 1;}
-.sideNav_2 .category{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;}
+.sideNav_2 .category{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; margin-top: 50px;}
 .sideNav_2 .category li{text-align: center; padding: 12px 10px;}
 .sideNav_2 .category li a{color: #eae6df; font-size: 16px;}
+.sideNav_2 .category li a:hover{text-decoration: underline;}
 .sideNav_2 .logoBox{width: 100%; position: absolute; left: 5px; top: 35%; color: #eae6df; font-size: 30px; text-align: center; display: none; transition: all 0.4s ease;}
+.sideNav_2 p{width: 100%; text-align: center; position: absolute;}
 
 /* profile section */
 .wrap .profile{width: 100%; height: 100vh; display: flex; align-items: center;  padding-right: 10px;}
@@ -86,14 +89,16 @@ html {scroll-behavior: smooth;}
 .portfolio .titBox h2{width: 100%; text-align: right; font-family: 'Baskervville'; font-size: 50px; margin-bottom: 10px;}
 .portfolio .titBox p{width: 100%; text-align: right;}
 .portfolio .potBox{width: 70%; height: auto; display: flex; justify-content: center; flex-wrap: wrap; padding: 70px; align-items: center;}
-.portfolio .potBox .potFrame{width: 100%; height: auto; display: flex; }
+.portfolio .potBox .potFrame{width: 100%; height: auto; display: flex;}
 .portfolio .btnBox{width: 100%; display: flex; justify-content: flex-end; padding-bottom: 50px;}
-.portfolio .btnBox button{display: inline-block; margin: 0 10px; cursor: pointer; color: #424266;}
-.portfolio .potBox .potSlider{width: 100%; height: auto; display: inline-block; } 
+.portfolio .btnBox button{display: inline-block; margin: 0 10px; cursor: pointer; color: #424266; transition: all 0.4s ease;}
+.portfolio .btnBox button:hover{filter: blur(3px);}
+
+.portfolio .potBox .potSlider{width: 100%; height: auto; display: inline-block;} 
 .portfolio .potBox .pot{width: 25%; height: auto;  display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);}
 .portfolio .potBox .pot img{width: 100%; height: 100%;}
 .portfolio .potBox .pot span{width: 100%; height: 100%; background: #424266;position: absolute; opacity: 0; transition: all 0.4s ease-in; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; top: 0; left: 0; padding: 20px;}
 .portfolio .potBox .pot span desc{display: flex;  }
-.portfolio .potBox .pot span h3{width: 100%; color: #fff; text-align: center;}
+.portfolio .potBox .pot span h3{width: 100%; color: #fff; text-align: center; font-size: 25px; margin-bottom: 10px;}
 .portfolio .potBox .pot span p{width: 100%; color: #fff; text-align: center;}
 .portfolio .potBox .pot span:hover{opacity: 0.9;}

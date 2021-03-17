@@ -168,7 +168,8 @@
                 <button><i class="fa fa-file-code"></i> 웹퍼블리싱</button>
                 <button><i class="fa fa-object-group"></i> 그래픽 디자인</button>
               </div>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse fugiat dolorum dolorem molestiae illum ea, minus in quidem fuga ducimus. Distinctio cupiditate corporis harum a blanditiis minima omnis nihil earum.</p>
+              <p>1Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse fugiat dolorum dolorem molestiae illum ea, minus in quidem fuga ducimus. Distinctio cupiditate corporis harum a blanditiis minima omnis nihil earum.</p>
+              <p>2Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse fugiat dolorum dolorem molestiae illum ea, minus in quidem fuga ducimus. Distinctio cupiditate corporis harum a blanditiis minima omnis nihil earum.</p>
             </div>
           </div>
           <div class="potBox">
@@ -178,9 +179,9 @@
                   <img data-lazy="/hkkku/img/web_01.jpg" alt="">
                   <span>
                     <div class="desc">
-                      <h3>lorem Ipsum</h3>
-                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                      <p>View Website</p>
+                      <h3>Database Project</h3>
+                      <p>PHP를 주로 활용하여 데이터 업로드 및 관리가 가능한 웹사이트를 구축</p>
+                      <a href="http://hxxku.dothome.co.kr/gold/" class="goBtn" target='_blank'>View Website</a>
                     </div>
                   </span>
                 </div>
@@ -188,9 +189,9 @@
                   <img data-lazy="/hkkku/img/web_02.jpg" alt="">
                   <span>
                     <div class="desc">
-                      <h3>lorem Ipsum</h3>
-                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                      <p>View Website</p>
+                      <h3>LEESLE Renewal</h3>
+                      <p>생활한복 1세대 브랜드인 '리슬'의 웹사이트 리뉴얼</p>
+                      <a href="http://hxxku.dothome.co.kr/leesle/" class="goBtn" target='_blank'>View Website</a>
                     </div>
                   </span>
                 </div>
@@ -198,9 +199,9 @@
                   <img data-lazy="/hkkku/img/web_03.jpg" alt="">
                   <span>
                     <div class="desc">
-                      <h3>lorem Ipsum</h3>
-                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                      <p>View Website</p>
+                      <h3>Movie API Project</h3>
+                      <p>네이버 영화 API를 받아와 영화 검색이 가능한 웹사이트 퍼블리싱</p>
+                      <a href="http://hxxku.dothome.co.kr/api/" class="goBtn" target='_blank'>View Website</a>
                     </div>
                   </span>
                 </div>
@@ -208,9 +209,9 @@
                   <img data-lazy="/hkkku/img/web_04.jpg" alt="">
                   <span>
                     <div class="desc">
-                      <h3>lorem Ipsum</h3>
-                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                      <p>View Website</p>
+                      <h3>My schedule</h3>
+                      <p>php 및 MariaDB를 활용한 즉각적 데이터 입력이 가능한 스케줄 관리용 웹사이트</p>
+                      <a href="http://hxxku.dothome.co.kr/myschedule/" class="goBtn" target='_blank'>View Website</a>
                     </div>
                   </span>
                 </div>
@@ -288,7 +289,30 @@
           <!-- portfolio box end -->
         </div>
         <!-- portfolio section end -->
-        <div class="section" data-anchor="4th">
+        <div class="section contact" data-anchor="4th">
+          <div class="contactWrap">
+            <div class="conTit">
+              <div class="conBox">
+                <h2>Contact</h2>
+                <p class="contactTxt">1Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse fugiat dolorum dolorem molestiae illum ea, minus in quidem fuga ducimus. Distinctio cupiditate corporis harum a blanditiis minima omnis nihil earum.</p>
+              </div>
+            </div>
+            <div class="conForm">
+              <form action="mailto:hhk7045@gmail.com" method="post" class="form" name="msgForm">
+                <p class="nameMail">
+                  <input type="text" name="msgName" placeholder="작성자" />
+                  <input type="text" name="msgEmail" placeholder="회신드릴 이메일 주소" />
+                </p>
+                <p class="subject">
+                  <input type="text" name="msgTit" placeholder="메세지 제목을 입력해주세요." />
+                </p>
+                <p class="message">
+                  <textarea placeholder="메세지 내용을 입력해주세요." name="msgTxt"></textarea>
+                </p>
+                <button type="button" class="msgSend"><i class="fa fa-paper-plane"></i> SEND MESSAGE</button>
+              </form>
+            </div>
+          </div>
         </div>
      </div>
      <!-- fullpage div end -->
@@ -329,6 +353,37 @@
           }
         });
       });
+    </script>
+
+    <script>
+      const msgSend = document.querySelector(".msgSend");
+      msgSend.addEventListener('click', insertMsg);
+                
+      function insertMsg(){
+        if(!document.msgForm.msgName.value){
+          alert("작성자를 입력해 주세요.")
+          document.msgForm.msgName.focus();
+          return;
+        }
+        if(!document.msgForm.msgEmail.value){
+          alert("이메일을 입력해 주세요.")
+          document.msgForm.msgEmail.focus();
+          return;
+        }
+        if(!document.msgForm.msgTit.value){
+          alert("메시지 제목을 입력해 주세요.")
+          document.msgForm.msgTit.focus();
+          return;
+        }
+        if(!document.msgForm.msgTxt.value){
+          alert("메시지 내용을 입력해 주세요.")
+          document.msgForm.msgTxt.focus();
+          return;
+        }
+
+        document.msgForm.submit();
+        
+      }
     </script>
 
     <script>

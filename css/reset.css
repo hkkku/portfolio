@@ -19,4 +19,5 @@ button, input, textarea, :focus{outline: 0; font-family: "NEXON Lv1 Gothic OTF";
 .clear::after{clear: both; display: block; content: '';} 
 .center{width: 100%; max-width: 980px; height: auto; margin: auto;}
 input::placeholder, textarea::placeholder{color: #686885;}
-_input:focus , textarea:focus{background: #eae6df;}
+input:focus , textarea:focus{background: #eae6df;}
+input:-internal-autofill-selected{background-color: #eae6df;}

@@ -14,7 +14,9 @@ $(function(){
     let index = $(this).index();
 
     $(".potFrame").hide();
+    $(".txtBox p").hide();
     $(".potFrame").eq(index).css('display', 'flex');
+    $(".txtBox p").eq(index).show();
     $('.potSlider').eq(index).slick({
       slidesToShow: 3,
       slidesToScroll: 1,

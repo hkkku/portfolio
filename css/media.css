@@ -6,8 +6,8 @@
 }
 
 @media screen and (max-width:1200px){
-  .wrap .skill .item.myProfile p{font-size: 14px;}
-  .wrap .skill .item h2{margin-bottom: 15px; font-size: 20px;}
+  .wrap .skill .item.myProfile p{font-size: 12px;}
+  .wrap .skill .item h2{margin-bottom: 15px; font-size: 24px;}
   .item.myProfile .sloganBox{padding-left: 80px;}
 
   .wrap .skill .item.career p,
@@ -15,6 +15,17 @@
 
   .wrap .skill .item.skillBar .pSkill h2, 
   .wrap .skill .item.skillBar .dSkill h2{font-size: 18px; margin-bottom: 10px;}
+
+  .portfolio .btnBox{flex-direction: column; padding-bottom: 30px;}
+  .portfolio .btnBox button{width: 100%; margin-bottom: 5px;}
+  .portfolio .titBox p{text-align: center; font-size: 12px;}
+  .portfolio .potBox .pot span{padding: 15px;}
+  .portfolio .potBox .pot span h3{font-size: 18px;}
+  .portfolio .potBox .pot span p{font-size: 12px;}
+  .portfolio .potBox .pot span a{font-size: 12px;}
+  .contact .contactWrap .conTit p{padding: 0;}
+  .contact .conForm form{width: 100%;}
+  
 }
 @media screen and (max-width:950px){
   .wrap .profile h2{font-size: 150px; padding-bottom: 100px; line-height: 0.9em;}
@@ -30,11 +41,48 @@
 
   .portfolio .titBox{width: 100%; justify-content: center; padding-top: 70px;}
   .portfolio .potBox{width: 100%; padding: 0 70px; align-items: flex-start;}
-  .portfolio .btnBox{justify-content: center; padding-bottom: 30px;}
+  .portfolio .btnBox{justify-content: center; padding-bottom: 30px; flex-direction: row;}
+  .portfolio .btnBox button{width: auto;}
   .portfolio .titBox h2{text-align: center;}
   .portfolio .titBox p{text-align: center;}
+
+  .contact .contactWrap .conTit{width: 100%; justify-content: center; padding: 100px 100px 0;}
+  .contact .contactWrap .conTit h2{text-align: center; padding: 0;}
+  .contact .contactWrap .conTit p{text-align: center; padding: 0;}
+  .contact .contactWrap .conForm{width: 100%; margin: 0;} 
+  .contact .conForm form{margin: 0;}
 }
 
 @media screen and (max-width:900px){
   .portfolio .potBox{width: 80%;}
+}
+
+@media screen and (max-width:650px){
+  .wrap .skill .item.skillBar .pSkill h2, 
+  .wrap .skill .item.skillBar .dSkill h2{font-size: 16px;}
+
+  .portfolio .potBox{width: 100%;}
+  
+  .contact .contactWrap .conForm{padding: 30px 100px;}
+  .contact .conForm form .nameMail{flex-wrap: wrap;}
+  .contact .conForm form .nameMail>input{width: 100%; margin-bottom: 10px;}
+  .contact .conForm form .nameMail>input:nth-child(2){margin: 0;}
+}
+
+@media screen and (max-width:480px){
+  .sideNav{display: none;}
+  .sideNav2{display: none;}
+  .mobileMenu{display: block;}
+  .wrap .skill .item{padding-left: 30px!important;}
+  .bar .barBorder{width: 90%;}
+  .portfolio .titBox .txtBox{width: 90%;}
+  .portfolio .potBox{padding: 0 30px;}
+  .contact .contactWrap .conTit{padding: 20px 80px;}
+  .contact .contactWrap .conForm{padding: 20px 50px;}
+}
+
+@media screen and (max-width:400px){
+  .contact .contactWrap .conTit h2{margin: 0;}
+  .contact .contactWrap .conTit p{display: none;}
+  .contact .contactWrap .conForm{padding: 20px;}
 }

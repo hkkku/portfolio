@@ -64,7 +64,8 @@ html {scroll-behavior: smooth;}
 .wrap .skill .item:nth-child(5){padding-top: 0;}
 .wrap .skill .item:nth-child(5){grid-column-start: 2; grid-column-end: 4;}
 
-.wrap .skill .item.photo .photoBox{position: absolute; right: 30px; bottom: 10px; width: 200px; height: 250px; background: #ddd; box-shadow: 10px 10px #424266;}
+.wrap .skill .item.photo .photoBox{width: 100%; position: absolute; right: 30px; bottom: 10px; width: 200px; height: 250px; background: #ddd; box-shadow: 10px 10px #424266; overflow: hidden;}
+.wrap .skill .item.photo .photoBox img{height: 100%;}
 .wrap .skill .item.myProfile{display: flex; text-align: right; flex-direction: column;}
 .item.myProfile h2{width: 100%;}
 .item.myProfile p{width: 100%;}
@@ -72,6 +73,7 @@ html {scroll-behavior: smooth;}
 .item.myProfile .sloganBox{margin-bottom: 20px;}
 
 .wrap .skill .item h2{width: 100%; font-size: 30px; margin-bottom: 35px; font-family: 'Baskervville';}
+
 .wrap .skill .item.skillBar{width: 100%; display: flex;  flex-direction: column; flex-wrap: wrap; align-items: flex-start;}
 
 .wrap .skill .item.skillBar .skillBox{width: 100%; display: flex;}
@@ -82,6 +84,7 @@ html {scroll-behavior: smooth;}
 .wrap .skill .item.skillBar .dSkill h2{margin-bottom: 30px; font-size: 22px;}
 .wrap .skill .item.skillBar .pSkill h3,
 .wrap .skill .item.skillBar .dSkill h3{margin-bottom: 5px; font-size: 13px;}
+.wrap .skill .item p{padding-bottom: 7px;}
 
 .bar{padding: 10px 0;}
 .bar .barBorder{width: 80%; height: 10px; background: #eae6df; border-radius: 30px; border: 1px solid #424266; position: relative;} 

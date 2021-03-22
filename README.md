@@ -17,3 +17,20 @@
 - **Works** :slick 플러그인으로 구현된 반응형 슬라이더
 - **Contact** 
 
+## To Do
+
+✔ 모바일 반응형 깨짐 현상 수정   
+✔ slick 로딩 개선   
+✔ 전체 페이지 로딩 이미지 추가
+
+## Framework & Plugin
+
+| Plugin | Readme |   
+| ------ | ------ |   
+| fllPage.js | https://github.com/alvarotrigo/fullpage.js |   
+| slick | https://kenwheeler.github.io/slick/ |
+
+***   
+## Contact
+
+📩 hhk7045@gmail.com

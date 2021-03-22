@@ -7,7 +7,8 @@
 
 - 🌠 1페이지 포트폴리오 웹사이트
 - 🌠 미디어 쿼리를 활용한 반응형 지원
-- 🌠 정돈되고 깔끔한 UI 디자인 및 레이아웃을 지향하는 웹사이트
+- 🌠 정돈되고 깔끔한 UI 디자인 및 레이아웃을 지향하는 웹사이트    
+- 🌠 JQuery 플러그인을 활용하여 효율적으로 웹사이트 디자인
 
 
 ## Sitemap 
@@ -27,7 +28,7 @@
 
 | Plugin | Readme |   
 | ------ | ------ |   
-| fllPage.js | https://github.com/alvarotrigo/fullpage.js |   
+| fullPage.js | https://github.com/alvarotrigo/fullpage.js |   
 | slick | https://kenwheeler.github.io/slick/ |
 
 ***   

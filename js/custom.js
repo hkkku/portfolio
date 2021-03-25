@@ -69,4 +69,10 @@ $(function(){
       $(".mobileCate").slideUp("fast");
     }
   });
+
+  $(document).on("click", function(e){
+    if($('.sideNav_2').is(e.target).length==0){
+      $('.sideNav_2').css({visibility: "hidden"})
+    }
+  });
 });

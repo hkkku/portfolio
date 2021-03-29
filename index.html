@@ -113,7 +113,7 @@
             <h2>Skill List</h2>
             <div class="skillBox">
               <div class="pSkill">
-                <h2><i class="fa fa-file-code"></i> Publishing Skill</h2>
+                <h2><i class="fa fa-file-code"></i> Publishing Skills</h2>
                 <div class="bar">
                   <h3><i class="fa fa-code"></i> HTML</h3>
                   <div class="barBorder">
@@ -138,10 +138,16 @@
                     <span class="progress" value="80"></span>
                   </div>
                 </div>
+                <div class="bar">
+                  <h3><i class="fa fa-code"></i> MYSQL</h3>
+                  <div class="barBorder">
+                    <span class="progress" value="40"></span>
+                  </div>
+                </div>
               </div>
               <!-- publishing skill bar end -->
               <div class="dSkill">
-                <h2><i class="fa fa-object-group"></i> Graphic Design Skill</h2>
+                <h2><i class="fa fa-object-group"></i> Graphic Design Skills</h2>
                 <div class="bar">
                   <h3><i class="fa fa-draw-polygon"></i> PS</h3>
                   <div class="barBorder">
@@ -162,6 +168,12 @@
                 </div>
                 <div class="bar">
                   <h3><i class="fa fa-draw-polygon"></i> XD</h3>
+                  <div class="barBorder">
+                    <span class="progress" value="50"></span>
+                  </div>
+                </div>
+                <div class="bar">
+                  <h3><i class="fa fa-draw-polygon"></i> ID</h3>
                   <div class="barBorder">
                     <span class="progress" value="50"></span>
                   </div>
@@ -426,7 +438,7 @@
          console.log(container.length);
         if( container.has(e.target).length === 0){
           closeNav()
-          
+          $('.sideNav').find("i").attr("class", "fa fa-bars");
       }
       });
     </script>

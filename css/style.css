@@ -32,10 +32,10 @@ html {scroll-behavior: smooth;}
 .wrap .profile .blank .dropping-texts > span{position: absolute; font-size:0px; opacity: 0; transition: all 0.4s;}
 
 .dropping-texts > span:nth-child(1) {
-  animation: roll 5.5s ease-in infinite 0s;
+  animation: roll 7.5s ease-in infinite 0s;
 }
 .dropping-texts > span:nth-child(2) {
-  animation: roll 5.5s ease-in infinite 1.5s;
+  animation: roll 7.5s ease-in infinite 2.5s;
 }
 
 @keyframes roll {
@@ -84,7 +84,7 @@ html {scroll-behavior: smooth;}
 .wrap .skill .item.skillBar .dSkill h2{margin-bottom: 30px; font-size: 22px;}
 .wrap .skill .item.skillBar .pSkill h3,
 .wrap .skill .item.skillBar .dSkill h3{margin-bottom: 5px; font-size: 13px;}
-.wrap .skill .item p{padding-bottom: 7px;}
+.wrap .skill .item p{padding-bottom: 7px; font-size: 15px;}
 
 .bar{padding: 10px 0;}
 .bar .barBorder{width: 80%; height: 10px; background: #eae6df; border-radius: 30px; border: 1px solid #424266; position: relative;} 

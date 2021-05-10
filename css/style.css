@@ -58,7 +58,7 @@ html {scroll-behavior: smooth;}
 }
 
 /* skill section */
-.wrap .skill{width: 100%; height: 100vh; background: #eae6df; display: grid; grid-template-columns: 1.3fr 1fr 1fr; grid-template-rows: 1fr 1.2fr; gap: 20px 50px;}
+.wrap .skill{width: 100%; height: 100vh; background: #eae6df; display: grid; grid-template-columns: 1.3fr 1fr 1fr; grid-template-rows: 0.5fr 1.5fr; gap: 20px 50px;}
 .wrap .skill .item{position: relative; padding: 200px 20px 20px;}
 .wrap .skill .item:nth-child(4),
 .wrap .skill .item:nth-child(5){padding-top: 0;}
@@ -72,7 +72,7 @@ html {scroll-behavior: smooth;}
 .item.myProfile .nameBox{margin-bottom: 20px; font-size: 16px;}
 .item.myProfile .sloganBox{margin-bottom: 20px;}
 
-.wrap .skill .item h2{width: 100%; font-size: 30px; margin-bottom: 35px; font-family: 'Baskervville';}
+.wrap .skill .item h2{width: 100%; font-size: 30px; margin-bottom: 5px; font-family: 'Baskervville';}
 
 .wrap .skill .item.skillBar{width: 100%; display: flex;  flex-direction: column; flex-wrap: wrap; align-items: flex-start;}
 
@@ -81,7 +81,7 @@ html {scroll-behavior: smooth;}
 .wrap .skill .item.skillBar .dSkill{width: 50%; display: flex; flex-wrap: wrap; flex-direction: column;}
 .wrap .skill .item.skillBar .pSkill.bar{width: 100%;}
 .wrap .skill .item.skillBar .pSkill h2,
-.wrap .skill .item.skillBar .dSkill h2{margin-bottom: 30px; font-size: 22px;}
+.wrap .skill .item.skillBar .dSkill h2{margin-bottom: 10px; font-size: 22px;}
 .wrap .skill .item.skillBar .pSkill h3,
 .wrap .skill .item.skillBar .dSkill h3{margin-bottom: 5px; font-size: 13px;}
 .wrap .skill .item p{padding-bottom: 7px; font-size: 15px;}
@@ -95,7 +95,7 @@ html {scroll-behavior: smooth;}
 .portfolio .titBox{width: 30%; display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end;}
 .portfolio .titBox .txtBox{width: 60%;}
 .portfolio .titBox h2{width: 100%; text-align: right; font-family: 'Baskervville'; font-size: 50px; margin-bottom: 10px;}
-.portfolio .titBox p{width: 100%; text-align: right; line-height: 1.6em;}
+.portfolio .titBox p{width: 100%; text-align: right; line-height: 1.6em; font-size: 14px;}
 .portfolio .titBox .txtBox a{width: 50%; text-align: center; border: 1px solid #424266; padding: 5px 10px; float: right; margin-top: 15px; transition: all 0.4s ease;}
 .portfolio .titBox .txtBox a:hover{background: #424266; color: #fff;}
 

@@ -6,6 +6,7 @@
 }
 
 @media screen and (max-width:1200px){
+  /* skill section media style */
   .wrap .skill .item.myProfile p{font-size: 12px;}
   .wrap .skill .item h2{margin-bottom: 15px; font-size: 24px;}
   .item.myProfile .sloganBox{padding-left: 80px;}
@@ -15,7 +16,9 @@
 
   .wrap .skill .item.skillBar .pSkill h2, 
   .wrap .skill .item.skillBar .dSkill h2{font-size: 18px; margin-bottom: 10px;}
+  
 
+  /* work section media style */
   .portfolio .btnBox{flex-direction: column; padding-bottom: 30px;}
   .portfolio .btnBox button{width: 100%; margin-bottom: 5px;}
   .portfolio .titBox p{text-align: center; font-size: 12px;}
@@ -23,12 +26,17 @@
   .portfolio .potBox .pot span h3{font-size: 18px;}
   .portfolio .potBox .pot span p{font-size: 12px;}
   .portfolio .potBox .pot span a{font-size: 12px;}
+
+
+  /* contact section media style */
   .contact .contactWrap .conTit p{padding: 0;}
   .contact .conForm form{width: 100%;}
   
 }
 @media screen and (max-width:950px){
   .wrap .profile h2{font-size: 150px; padding-bottom: 100px; line-height: 0.9em;}
+  
+  /* skill section media style */
   .wrap .skill{grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1.2fr 1.2fr; gap: 20px 50px;}
   .wrap .skill .item{padding: 50px;}
   .wrap .skill .item.photo{display: none;}
@@ -39,6 +47,8 @@
   .wrap .skill .item.skillBar{grid-column-start: 1; grid-column-end: 3; padding-left: 100px;}
   .item.myProfile .sloganBox{padding: 0;}
 
+
+  /* work section media style */
   .portfolio .titBox{width: 100%; justify-content: center; padding-top: 70px;}
   .portfolio .potBox{width: 100%; padding: 0 70px; align-items: flex-start;}
   .portfolio .btnBox{justify-content: center; padding-bottom: 30px; flex-direction: row;}
@@ -46,6 +56,8 @@
   .portfolio .titBox h2{text-align: center;}
   .portfolio .titBox p{text-align: center;}
 
+
+  /* contact section media style */
   .contact .contactWrap .conTit{width: 100%; justify-content: center; padding: 100px 100px 0;}
   .contact .contactWrap .conTit h2{text-align: center; padding: 0;}
   .contact .contactWrap .conTit p{text-align: center; padding: 0;}

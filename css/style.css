@@ -103,6 +103,7 @@ html {scroll-behavior: smooth;}
 .portfolio .potBox .potFrame{width: 100%; height: auto; display: flex;}
 .portfolio .btnBox{width: 100%; display: flex; justify-content: flex-end; padding-bottom: 50px;}
 .portfolio .btnBox button{display: inline-block; margin: 0 10px; cursor: pointer; color: #424266; transition: all 0.4s ease;}
+.portfolio .btnBox button.active{background: #424266; color: #fff; padding: 5px; font-style: italic;}
 .portfolio .btnBox button:hover{filter: blur(3px);}
 
 .portfolio .potBox .potSlider{width: 100%; height: auto; display: inline-block;} 
@@ -112,7 +113,7 @@ html {scroll-behavior: smooth;}
 .portfolio .potBox .pot span .desc{display: flex;  flex-wrap: wrap;  justify-content: center;}
 .portfolio .potBox .pot span h3{width: 100%; color: #fff; text-align: center; font-size: 25px; margin-bottom: 15px;}
 .portfolio .potBox .pot span p{width: 100%; color: #fff; text-align: center; margin-bottom: 10px;}
-.portfolio .potBox .pot span a{width: 50%; padding: 5px 15px; border: 1px solid #fff; color: #fff; text-align: center; transition: all 0.4s ease; display: block; margin: 5px;}
+.portfolio .potBox .pot span a{width: 70%; padding: 5px 15px; border: 1px solid #fff; color: #fff; text-align: center; transition: all 0.4s ease; display: block; margin: 5px;}
 .portfolio .potBox .pot span a:hover{color: #424266; background: #fff;}
 .portfolio .potBox .pot span:hover{opacity: 0.9;}
 
@@ -144,4 +145,3 @@ input:-webkit-autofill:active {transition: background-color 5000s ease-in-out 0s
 .contact .conForm form button{display: inline-block; width: 100%; color: #424266; padding: 15px 0; border: 1px solid #424266; margin-top: 10px; text-align: center; font-weight: 400; transition: all 0.3s; background: #eae6df;}
 .contact .conForm form a:hover,
 .contact .conForm form button:hover{background: #424266; color: #fff;}
-/* prettier-ignore */

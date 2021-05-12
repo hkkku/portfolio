@@ -34,8 +34,6 @@ $(function(){
           breakpoint: 900,
           settings: {
             arrows: true,
-            // centerMode: true,
-            // centerPadding: '40px',
             fade: true,
             speed: 700,
             slidesToShow: 1
@@ -45,16 +43,15 @@ $(function(){
           breakpoint: 480,
           settings: {
             arrows: false,
-            // centerMode: true,
-            // centerPadding: '40px',
             slidesToShow: 1
           }
         }
       ]
     });
+
   });
   
-  $(".btnBox button").eq(0).trigger("click");
+  
 
   $(".mobileMenu").click(function(){
     $(this).toggleClass("on");
@@ -75,4 +72,11 @@ $(function(){
       $('.sideNav_2').css({visibility: "hidden"})
     }
   });
+
+  $(".cateBtn").click(function(){
+    $('.cateBtn').removeClass('active');
+    $(this).addClass('active');
+  });
+
+  $(".btnBox button").eq(0).trigger("click");
 });
